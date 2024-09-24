@@ -36,6 +36,7 @@ The Terraform configuration is organized in modules for each major component:
 - `runner_scripts/`: Scripts for installing Jenkins, Nexus, and SonarQube on the respective instances.
 
 ## Directory Structure 
+```bash
 .
 ├── s3/
 ├── networking/
@@ -51,7 +52,7 @@ The Terraform configuration is organized in modules for each major component:
 ├── variables.tf
 ├── terraform.tfvars
 └── main.tf
-
+```
 ---
 
 ## Terraform Setup
@@ -212,11 +213,11 @@ The GitLab CI/CD pipeline automates the process of provisioning and managing inf
 1. **Clone the repository** to your local environment:
 
     ```bash
-    git clone <your-repo-url>
-    cd <repo-folder>
+    git clone https://github.com/Godfrey22152/automation-of-aws-infra-using-terraform-via-Gitlab.git
+    cd automation-of-aws-infra-using-terraform-via-Gitlab
     ```
 
-2. **Initialize Terraform**: This sets up the working directory with necessary configuration and downloads any required plugins or modules:
+2. **Initialize Terraform**: This sets up the working directory with the necessary configuration and downloads any required plugins or modules:
 
     ```bash
     terraform init
